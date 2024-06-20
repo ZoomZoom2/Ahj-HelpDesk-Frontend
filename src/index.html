@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HelpDesk</title>
+</head>
+<body>
+<div class="desk">
+  <div class="wrpBtn">
+    <button class="btn addTicketBtn">Add ticket</button>
+  </div>
+  <div class="ticketsContainer"></div>
+  <div class="addNewTicketForm absoluteContainer">
+    <form class="form absolutWRP addNewTicketForm">
+      <span class="modalTitle">Add new ticket</span>
+      <div class="name inputWRP">
+        <div class="labelWRP">
+          <label class="label">Name</label>
+        </div>
+        <input class="input nameInput" name="name" type="text"  required>
+      </div>
+      <div class="description inputWRP">
+        <div class="labelWRP">
+          <label class="label">Description</label>
+        </div>
+        <textarea class="input descriptionInput" name="description"></textarea>
+      </div>
+      <div class="modalButtons">
+        <button class="btn cancelModalBtn" type="reset">Cancel</button>
+        <button class="btn okBtn" >OK</button>
+      </div>
+    </form>
+  </div>
+  <div class="removeTicketAskContainer absoluteContainer">
+    <div class="removeTicketAsk absolutWRP">
+      <span class="modalTitle">Delete ticket</span>
+      <span class="modalMessage">Are you sure you want to delete the ticket? This action is irreversible</span>
+      <div class="modalButtons">
+        <button class="btn cancelModalBtn" type="button">Cancel</button>
+        <button class="btn okBtn">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
